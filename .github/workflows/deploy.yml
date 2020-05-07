@@ -24,11 +24,8 @@ jobs:
                     node-version: '12.x'
             -   name: Install serverless
                 run: npm install -g serverless
-            -   name: Install serverless-stage-manager
-                run: serverless plugin install --name serverless-stage-manager
             -   run: export NODE_ENV=production
             -   run: npm install
-            -   run: export SLS_DEBUG=*
             -   name: serverless deploy to production
                 run: sls deploy
                 env:
