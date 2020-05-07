@@ -28,6 +28,7 @@ jobs:
                 run: serverless plugin install --name serverless-stage-manager
             -   run: export NODE_ENV=production
             -   run: npm install
+            -   run: export SLS_DEBUG=*
             -   name: serverless deploy to production
                 run: sls deploy
                 env:
