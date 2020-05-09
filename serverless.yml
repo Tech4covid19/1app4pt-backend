@@ -13,6 +13,8 @@ provider:
     AWS_REGION_SNS: ${self:custom.AWS_REGION_SNS.${opt:stage, 'dev'}}  
     AWS_SNS_ACCESS_KEY_ID: ${self:custom.AWS_SNS_ACCESS_KEY_ID.${opt:stage, 'dev'}}  
     AWS_SNS_SECRET_ACCESS_KEY: ${self:custom.AWS_SNS_SECRET_ACCESS_KEY.${opt:stage, 'dev'}}  
+    ENROLL_EMAIL: ${self:custom.ENROLL_EMAIL.${opt:stage, 'dev'}} 
+    PRODUCTION: ${self:custom.PRODUCTION.${opt:stage, 'dev'}} 
 
 functions:
   app:
