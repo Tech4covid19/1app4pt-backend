@@ -1,15 +1,18 @@
 {
   "name": "1app4pt-backend",
-  "description": "",
+  "description": "1App4PT API",
   "version": "0.1.0",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon $NODE_DEBUG_OPTION --watch . --ext js"
   },
+  "author": "1App4PT Team",
+  "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.647.0",
     "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",    
     "datauri": "^2.0.0",
     "dotenv": "^8.2.0",
     "fastify": "^2.13.0",

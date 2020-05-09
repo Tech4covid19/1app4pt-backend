@@ -23,6 +23,13 @@ fastify.register(
   }
 })
 
+const corsOptions = {
+  origin: process.env.CORS_ORIGIN.split(','),
+  methods: 'OPTIONS,GET,HEAD,PUT,PATCH,POST,DELETE',
+  optionsSuccessStatus: 200 // to support some legacy browsers
+}
+fastify.use(require('cors')(corsOptions))
+
 fastify.register(AutoLoad, {
   dir: path.join(__dirname, 'plugins'),
   //options: Object.assign({}, opts)
