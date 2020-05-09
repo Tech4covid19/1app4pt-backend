@@ -35,8 +35,8 @@ custom:
     - staging
     - prd
   PRODUCTION: 
-    dev: 0
-    staging: 0
+    dev: 1
+    staging: 1
     prd: 1
   AWS_SNS_ACCESS_KEY_ID: 
     dev: AKIA3PHZAWHE4SO6NG5K
