@@ -15,6 +15,7 @@ provider:
     AWS_SNS_SECRET_ACCESS_KEY: ${self:custom.AWS_SNS_SECRET_ACCESS_KEY.${opt:stage, 'dev'}}  
     ENROLL_EMAIL: ${self:custom.ENROLL_EMAIL.${opt:stage, 'dev'}} 
     PRODUCTION: ${self:custom.PRODUCTION.${opt:stage, 'dev'}} 
+    CORS_ORIGIN: ${self:custom.CORS_ORIGIN.${opt:stage, 'dev'}}
 
 functions:
   app:
@@ -54,6 +55,10 @@ custom:
     dev: info@1app4.pt
     staging: info@1app4.pt
     prd: info@1app4.pt
+  CORS_ORIGIN:
+    dev: http://localhost
+    staging: https://localhost
+    prd: https://1app4.pt,https://www.1app4.pt
 
 
 # Plugins
