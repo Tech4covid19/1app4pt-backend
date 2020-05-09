@@ -53,6 +53,7 @@ custom:
     staging: info@1app4.pt
     prd: info@1app4.pt
 
+
 # Plugins
 plugins:
   - serverless-stage-manager
