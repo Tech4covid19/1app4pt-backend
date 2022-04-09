@@ -22,7 +22,7 @@
     "fastify-plugin": "^1.5.0",
     "fastify-rate-limit": "^3.0.1",
     "fastify-static": "^2.6.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "pg": "6.4.2",
     "serverless-http": "^2.3.2"
   },
